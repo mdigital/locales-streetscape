@@ -214,6 +214,8 @@
 		1887A69A169C0B0200B456A8 /* casa-simple.pod in Resources */ = {isa = PBXBuildFile; fileRef = 1887A699169C0AFE00B456A8 /* casa-simple.pod */; };
 		18F92D8F16A0BA4900AF6052 /* AppleGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F92D8D16A0BA4600AF6052 /* AppleGothic.ttf */; };
 		18F92D9016A0BA8B00AF6052 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1887A40D169BA5E800B456A8 /* Icon.png */; };
+		18F92D9816A100B600AF6052 /* BuildingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F92D9616A100B500AF6052 /* BuildingOverlayViewController.m */; };
+		18F92D9916A100B600AF6052 /* BuildingOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F92D9716A100B500AF6052 /* BuildingOverlayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -654,6 +656,9 @@
 		1887A696169BBE3600B456A8 /* long-street.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = "long-street.pod"; sourceTree = "<group>"; };
 		1887A699169C0AFE00B456A8 /* casa-simple.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = "casa-simple.pod"; sourceTree = "<group>"; };
 		18F92D8D16A0BA4600AF6052 /* AppleGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleGothic.ttf; sourceTree = "<group>"; };
+		18F92D9516A100B500AF6052 /* BuildingOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingOverlayViewController.h; sourceTree = "<group>"; };
+		18F92D9616A100B500AF6052 /* BuildingOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingOverlayViewController.m; sourceTree = "<group>"; };
+		18F92D9716A100B500AF6052 /* BuildingOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuildingOverlayViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1402,6 +1407,9 @@
 				1887A686169BA5EE00B456A8 /* StreetScapeLayer.m */,
 				1887A688169BA5EE00B456A8 /* StreetScapeScene.h */,
 				1887A689169BA5EE00B456A8 /* StreetScapeScene.m */,
+				18F92D9516A100B500AF6052 /* BuildingOverlayViewController.h */,
+				18F92D9616A100B500AF6052 /* BuildingOverlayViewController.m */,
+				18F92D9716A100B500AF6052 /* BuildingOverlayViewController.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1467,6 +1475,7 @@
 				1887A69A169C0B0200B456A8 /* casa-simple.pod in Resources */,
 				18F92D8F16A0BA4900AF6052 /* AppleGothic.ttf in Resources */,
 				18F92D9016A0BA8B00AF6052 /* Icon.png in Resources */,
+				18F92D9916A100B600AF6052 /* BuildingOverlayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1665,6 +1674,7 @@
 				1887A684169BA5EE00B456A8 /* StreetScapeAppDelegate.m in Sources */,
 				1887A687169BA5EE00B456A8 /* StreetScapeLayer.m in Sources */,
 				1887A68A169BA5EE00B456A8 /* StreetScapeScene.m in Sources */,
+				18F92D9816A100B600AF6052 /* BuildingOverlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
