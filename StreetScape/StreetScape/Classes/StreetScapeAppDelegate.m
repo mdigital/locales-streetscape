@@ -14,12 +14,12 @@
 #define kAnimationFrameRate		60		// Animation frame rate
 
 @implementation StreetScapeAppDelegate {
-	UIWindow *window;
+//	UIWindow *window;
 	CC3DeviceCameraOverlayUIViewController *viewController;
 }
 
 -(void) dealloc {
-	[window release];
+	[_window release];
 	[viewController release];
 	[super dealloc];
 }
@@ -52,10 +52,10 @@
 	[director enableRetinaDisplay: YES];
 	
 	// Create the window, make the controller (and its view) the root of the window, and present the window
-	window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-	[window addSubview: viewController.view];
-	window.rootViewController = viewController;
-	[window makeKeyAndVisible];
+	_window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+	[_window addSubview: viewController.view];
+	_window.rootViewController = viewController;
+	[_window makeKeyAndVisible];
 	
 	// Set to YES for Augmented Reality 3D overlay on device camera.
 	// This must be done after the window is made visible!

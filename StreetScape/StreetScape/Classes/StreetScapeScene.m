@@ -14,6 +14,9 @@
 #import "CC3Light.h"
 #import "cocos2d.h"
 
+#import "BuildingOverlayViewController.h"
+#import "StreetScapeAppDelegate.h"
+
 @implementation StreetScapeScene
 
 -(void) dealloc {
@@ -346,12 +349,20 @@
 -(void) nodeSelected: (CC3Node*) aNode byTouchEvent: (uint) touchType at: (CGPoint) touchPoint {
     LogCleanDebug(@"Tapped!: %@", aNode.name);
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Building selected"
-                                                    message:aNode.name
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Building selected"
+//                                                    message:aNode.name
+//                                                   delegate:nil
+//                                          cancelButtonTitle:@"OK"
+//                                          otherButtonTitles:nil];
+//    [alert show];
+    
+    
+    BuildingOverlayViewController *vc = [[BuildingOverlayViewController alloc] initWithNibName:nil bundle:nil];
+    StreetScapeAppDelegate *appDelegate = (StreetScapeAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.window.rootViewController presentViewController:vc animated:YES completion:nil];
+    
+    
+    
 }
 
 @end

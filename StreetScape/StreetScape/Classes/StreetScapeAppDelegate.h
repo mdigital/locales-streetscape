@@ -10,4 +10,5 @@
 #import "CC3UIViewController.h"
 
 @interface StreetScapeAppDelegate : NSObject <UIApplicationDelegate>
+@property (retain, nonatomic) UIWindow *window;
 @end
